@@ -22,6 +22,14 @@ super + Delete
 super + shift + b
 	brave
 
+# google search
+super + alt + b
+	dsearch
+
+# launch dmenu networkmanager
+super + n
+	sudo networkmanager_dmenu -fn "Fantasque Sans Mono:pixelsize=18:antialias=true:autohint=true"
+
 #
 # bspwm hotkeys
 #
