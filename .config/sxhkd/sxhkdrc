@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -b -p "Ejecutar:" -fn "Fantasque Sans Mono:pixelsize=18:antialias=true:autohint=true"
+	dmenu_run -b -p "Ejecutar:" 
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -16,7 +16,7 @@ super + Escape
 
 # shutdown
 super + Delete
-	prompt "Apagar el equipo:" "shutdown -h now"
+	prompt "Apagar el equipo:" "sudo shutdown -h now"
 
 # launch brave
 super + shift + b
@@ -28,7 +28,7 @@ super + alt + b
 
 # launch dmenu networkmanager
 super + n
-	sudo networkmanager_dmenu -fn "Fantasque Sans Mono:pixelsize=18:antialias=true:autohint=true"
+	sudo networkmanager_dmenu 
 
 #
 # bspwm hotkeys
