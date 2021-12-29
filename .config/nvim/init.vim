@@ -1,8 +1,15 @@
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin(stdpath('data').'/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'lervag/vimtex'
+
 let g:vimtex_compiler_method='tectonic'
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_view_method='zathura'
