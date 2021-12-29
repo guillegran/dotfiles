@@ -146,4 +146,3 @@ super + shift + s
 # set up VGA monitor
 super + shift + v
 	xrandr --output LVDS-1 --auto --mode 1366x768 --scale 1x1 --output VGA-1 --auto --left-of LVDS-1 && feh --no-fehbg --bg-scale ~/pics/gwal.jpg
-

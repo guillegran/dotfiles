@@ -6,8 +6,8 @@ setxkbmap -layout es -option caps:swapescape
 # merge in Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-# set wallpaper
-gwal
+# set cursor theme
+xsetroot -cursor_name left_ptr
 
 # start bspwm
 sxhkd &

@@ -28,3 +28,6 @@ xcompmgr
 
 # start polybar
 $HOME/.config/polybar/launch.sh
+
+# hide the cursor after a while
+unclutter
