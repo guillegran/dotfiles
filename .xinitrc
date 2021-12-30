@@ -12,3 +12,4 @@ xsetroot -cursor_name left_ptr
 # start bspwm
 sxhkd &
 exec bspwm
+

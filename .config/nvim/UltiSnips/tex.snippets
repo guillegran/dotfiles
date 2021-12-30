@@ -35,16 +35,28 @@ snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
 `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
 endsnippet
 
-snippet (( "parentheses" iA
+snippet ( "parentheses" iA
+($1)$0
+endsnippet
+
+snippet [ "brackets" iA
+[$1]$0
+endsnippet
+
+snippet { "braces" iA
+{$1}$0
+endsnippet
+
+snippet bigp "big parentheses" iA
 \left( $1 \right)$0
 endsnippet
 
-snippet [[ "bracket" iA
+snippet bigb "big brackets" iA
 \left[ $1 \right]$0
 endsnippet
 
-snippet {{ "brace" iA
-\\{$1\\}$0
+snippet bigl "big braces" iA
+\left\\{$1\right\\}$0
 endsnippet
 
 snippet // "fraction" iA
@@ -60,4 +72,23 @@ endsnippet
 
 snippet " "quotes" iA
 \`\`$1" $0
+endsnippet
+
+snippet dia "diagram" bA
+\begin{center}
+\begin{tikzcd}
+$1
+\end{tikzcd}
+\end{center}
+$0
+endsnippet
+
+snippet squ "diagram" bA
+\begin{center}
+\begin{tikzcd}
+$1 \ar{r}{$2} \ar{d}{$3} & $4 \ar{d}{$5} \\\
+$6 \ar{r}{$7} & $8
+\end{tikzcd}
+\end{center}
+$0
 endsnippet
