@@ -30,6 +30,10 @@ super + alt + b
 super + n
 	sudo networkmanager_dmenu 
 
+# passmenu
+super + shift + p
+	passmenu
+
 #
 # bspwm hotkeys
 #
