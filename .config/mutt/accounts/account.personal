@@ -1,0 +1,17 @@
+set folder = "imaps://guille@guillegallego.xyz@mail.guillegallego.xyz:993"
+
+set smtp_url = "smtp://guille@guillegallego.xyz@mail.guillegallego.xyz:587"
+
+set from = "guille@guillegallego.xyz"
+set realname = "Guillermo Gallego"
+
+set imap_pass="`pass email`"
+set smtp_pass="`pass email`"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts
+

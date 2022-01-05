@@ -1,0 +1,17 @@
+set folder = "imaps://70360966X@correo.csic.es:993"
+
+set smtp_url = "smtp://70360966X@correo.csic.es:587"
+
+set from = "guillermo.gallego@icmat.es"
+set realname = "Guillermo Gallego"
+
+set imap_pass="`pass icmatemail`"
+set smtp_pass="`pass icmatemail`"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts
+
