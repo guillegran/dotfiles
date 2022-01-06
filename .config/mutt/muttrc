@@ -1,11 +1,12 @@
 source gpg.rc
 
-source accounts/account.personal
+# Default account
+source accounts/account.personal 
 
+# Change accounts
 macro index <f2> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.personal<enter><change-folder>!<enter>"
 macro index <f3> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.icmat<enter><change-folder>!<enter>"
 macro index <f4> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.ucm<enter><change-folder>!<enter>"
 macro index <f5> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.gmail<enter><change-folder>!<enter>"
 
-source color.muttrc
-source mutt-wizard.muttrc
+source mutt-wizard.muttrc # Load Luke Smith's keybindings and colours
