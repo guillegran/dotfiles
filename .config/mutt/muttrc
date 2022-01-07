@@ -9,4 +9,7 @@ macro index <f3> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/ac
 macro index <f4> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.ucm<enter><change-folder>!<enter>"
 macro index <f5> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.gmail<enter><change-folder>!<enter>"
 
+# Set certificates file
+set certificate_file="~/.config/mutt/mutt_certificates"
+
 source mutt-wizard.muttrc # Load Luke Smith's keybindings and colours
