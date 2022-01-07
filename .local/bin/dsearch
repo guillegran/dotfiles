@@ -1,0 +1,7 @@
+#!/bin/bash
+
+URL='https://google.com/search?q='
+QUERY=$(:| dmenu -p "Buscar:" -fn "Fantasque Sans Mono:pixelsize=18:antialias=true:autohint=true" -b)
+if [ -n "$QUERY" ]; then
+	brave "${URL}${QUERY}"
+fi

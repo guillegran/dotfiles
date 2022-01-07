@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "getting page index"
+wget -q "https://clients3.google.com/cast/chromecast/home" -O /tmp/index.html 
+
+echo "getting image url"
+imgurl=$(grep -oP 'https:\\/\\/ccp-lh(.*?)-mv' /tmp/index.html | sed -e 's/\\//g' -e 's/u003d/=/g' | shuf -n 1)
+
+echo "getting image"
+wget -q $imgurl -O ~/pics/gwal.jpg
+
+echo "setting wallpaper"
+feh --no-fehbg --bg-scale ~/pics/gwal.jpg
+
+echo "removing temporary files"
+rm /tmp/index.html

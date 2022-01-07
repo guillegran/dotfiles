@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rsync -uvrP --delete-after ~/web/blog/ root@guillegallego.xyz:/var/www/blog

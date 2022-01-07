@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rsync -uvrP --delete-after ~/web/guillegallego/ root@guillegallego.xyz:/var/www/guillegallego
