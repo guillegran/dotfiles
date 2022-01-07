@@ -4,7 +4,8 @@
 setxkbmap -layout es -option caps:swapescape
 
 # merge in Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+xrdb -merge ".config/X11/xresources"
 
 # set cursor theme
 xsetroot -cursor_name left_ptr
