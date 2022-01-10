@@ -3,6 +3,9 @@ source gpg.rc
 # Default account
 source accounts/account.personal 
 
+# Load Luke Smith's keybindings and colours
+source mutt-wizard.muttrc
+
 # Change accounts
 macro index <f2> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.personal<enter><change-folder>!<enter>"
 macro index <f3> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.icmat<enter><change-folder>!<enter>"
@@ -12,4 +15,3 @@ macro index <f5> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/ac
 # Set certificates file
 set certificate_file="~/.config/mutt/mutt_certificates"
 
-source mutt-wizard.muttrc # Load Luke Smith's keybindings and colours

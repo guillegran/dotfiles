@@ -15,3 +15,21 @@ set postponed = "+[Gmail]/Borradores"
 
 mailboxes =INBOX =[Gmail]/Enviados =[Gmail]/Papelera =[Gmail]/Borradores
 
+bind index,pager i noop
+bind index,pager g noop
+bind index \Cf noop
+bind index,pager M noop
+bind index,pager C noop
+
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+macro index,pager gd "<change-folder>=[Gmail]/Borradores<enter>" "go to drafts"
+macro index,pager Md ";<save-message>=[Gmail]/Borradores<enter>" "move mail to drafts"
+macro index,pager Cd ";<copy-message>=[Gmail]/Borradores<enter>" "copy mail to drafts"
+macro index,pager gt "<change-folder>=[Gmail]/Papelera<enter>" "go to trash"
+macro index,pager Mt ";<save-message>=[Gmail]/Papelera<enter>" "move mail to trash"
+macro index,pager Ct ";<copy-message>=[Gmail]/Papelera<enter>" "copy mail to trash"
+macro index,pager gs "<change-folder>=[Gmail]/Enviados<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=[Gmail]/Enviados<enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=[Gmail]/Enviados<enter>" "copy mail to sent"
