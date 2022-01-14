@@ -42,9 +42,9 @@ super + e
 super + shift + p
 	passmenu
 
-# generate random password of 12 characters and output it to clipboard
+# generate random password of 16 characters and output it to clipboard
 super + alt + p
-	pwgen -1cnsy 12 | xclip -selection clipboard
+	pwgen -1cnsy 16 | xclip -selection clipboard
 
 #
 # bspwm hotkeys

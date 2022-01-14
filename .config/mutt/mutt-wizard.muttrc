@@ -22,14 +22,12 @@ auto_view application/pgp-encrypted
 alternative_order text/plain text/enriched text/html
 
 # General rebindings
-bind index gg first-entry
 bind index j next-entry
 bind index k previous-entry
 bind attach <return> view-mailcap
 bind attach l view-mailcap
 bind editor <space> noop
 bind index G last-entry
-bind index gg first-entry
 bind pager,attach h exit
 bind pager j next-line
 bind pager k previous-line
@@ -44,7 +42,6 @@ bind index,query <space> tag-entry
 macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
 bind index,pager H view-raw-message
 bind browser l select-entry
-bind pager,browser gg top-page
 bind pager,browser G bottom-page
 bind index,pager,browser d half-down
 bind index,pager,browser u half-up
