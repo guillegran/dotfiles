@@ -1,7 +1,7 @@
 source gpg.rc
 
 # Default account
-source accounts/account.personal 
+source accounts/account.ucm
 
 # Load Luke Smith's keybindings and colours
 source mutt-wizard.muttrc
