@@ -1,7 +1,11 @@
+# Set certificates file and save certificates
+set certificate_file="~/.config/mutt/mutt_certificates"
+
 source gpg.rc
 
 # Default account
-source accounts/account.ucm
+#source accounts/account.ucm
+source accounts/account.personal
 
 # Load Luke Smith's keybindings and colours
 source mutt-wizard.muttrc
@@ -11,7 +15,3 @@ macro index <f2> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/ac
 macro index <f3> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.icmat<enter><change-folder>!<enter>"
 macro index <f4> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.ucm<enter><change-folder>!<enter>"
 macro index <f5> "<sync-mailbox><enter-command>source ~/.config/mutt/accounts/account.gmail<enter><change-folder>!<enter>"
-
-# Set certificates file
-set certificate_file="~/.config/mutt/mutt_certificates"
-

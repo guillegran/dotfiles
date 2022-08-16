@@ -20,7 +20,7 @@ export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
-if [[ "$(tty)" = "/dev/tty1" ]]; then
-	pgrep bspwm || startx "$XINITRC"
+if [[ -z "${DISPLAY}" ]] && [[ "${XDG_VTNR}" -eq 1 ]] && [[ "$(tty)" = "/dev/tty1" ]]; then
+	pgrep bspwm || exec startx "$XINITRC"
 fi
 
